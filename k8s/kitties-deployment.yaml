@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: kitties
-          image: ghcr.io/lucidreline/kitties:latest
+          image: lucidreline/kitties:latest
           ports:
             - containerPort: 80
           imagePullPolicy: Always
