@@ -5,7 +5,7 @@ import Flyer from './components/flyer/flyer'
 
 function App() {
   const endymionDetails = [
-    { normal: "Last Seen: ", accent: "8/2/2025" },
+    { normal: "Last Seen: ", accent: "08/02/2025" },
     { normal: "Wearing: ", accent: "A blue color with fishes" },
     { normal: "Super shy, approach slowly", accent: "" },
     { normal: "Call him by name in a soft tone", accent: "" },
