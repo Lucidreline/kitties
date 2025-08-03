@@ -1,0 +1,45 @@
+.flyer {
+    border: red solid 5px;
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+
+    .title {
+
+        .title-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 5rem;
+        }
+    }
+
+    .photo {
+        height: 30vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .name-details {
+        margin: 0.5rem 0;
+
+        .cat-name {
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .pronounce {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .specific-details {
+        .detail-item {
+            .detail-accent-text {
+                color: red;
+            }
+        }
+
+    }
+}

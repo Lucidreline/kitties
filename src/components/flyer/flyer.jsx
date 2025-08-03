@@ -1,4 +1,6 @@
 import React from 'react'
+import './flyer.scss'
+import image from '/cat-photos/endymion.jpg'
 
 const Flyer = ({ name, pronounce, details }) => {
     return (
@@ -6,7 +8,8 @@ const Flyer = ({ name, pronounce, details }) => {
             <div className="title">
                 <h1 className="title-text">Lost Cat!</h1>
             </div>
-            <div className="photo"></div>
+            <div className="photo" style={{ backgroundImage: `url("/cat-photos/endymion.jpg")` }}></div>
+
             <div className="name-details">
                 <span className="cat-name">{name}</span>
                 <span className="pronounce">Pronounced:"{pronounce}" </span>
@@ -15,8 +18,8 @@ const Flyer = ({ name, pronounce, details }) => {
                 {
                     details.map(detail => (
                         <div className="detail-item">
-                            <span className="detail-text">{detail.normal}</span>
-                            <span className="detail-text">{detail.accent}</span>
+                            <span className="detail-normal-text">{detail.normal}</span>
+                            <span className="detail-accent-text">{detail.accent}</span>
                         </div>
                     ))
                 }
