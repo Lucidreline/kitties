@@ -16,7 +16,7 @@ const Flyer = ({ name, pronounce, details, photo }) => {
             <div className="specific-details">
                 {
                     details.map(detail => (
-                        <div className="detail-item">
+                        <div className="detail-item" key={detail.normal}>
                             <span className="detail-normal-text">{detail.normal}</span>
                             <span className="detail-accent-text">{detail.accent}</span>
                         </div>
