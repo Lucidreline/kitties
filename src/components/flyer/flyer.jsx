@@ -1,14 +1,13 @@
 import React from 'react'
 import './flyer.scss'
-import image from '/cat-photos/endymion.jpg'
 
-const Flyer = ({ name, pronounce, details }) => {
+const Flyer = ({ name, pronounce, details, photo }) => {
     return (
         <div className='flyer'>
             <div className="title">
                 <h1 className="title-text">Lost Cat!</h1>
             </div>
-            <div className="photo" style={{ backgroundImage: `url("/cat-photos/endymion.jpg")` }}></div>
+            <div className="photo" style={{ backgroundImage: `url("/cat-photos/${photo}")` }}></div>
 
             <div className="name-details">
                 <span className="cat-name">{name}</span>
