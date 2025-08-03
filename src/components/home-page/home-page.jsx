@@ -14,7 +14,7 @@ const HomePage = () => {
                 <p>C:\Users\Manny dir</p>
                 <br />
                 {catDetails.map(detail => (
-                    <Link className="cat-links" key={detail.name} to="/Endymion">
+                    <Link className="cat-links" key={detail.name} to={`/${detail.name}`}>
                         <span className="date">{detail.birthDate}</span>
                         <span className="time">{detail.birthTime}</span>
                         <span className="byte-size">{detail.byteSize}</span>
