@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         {catDetails.map(detail => (
-          <Route path={`/${detail.name}`} element={<Flyer name={detail.name} pronounce={detail.pronounce} details={detail.specifics} photo={detail.photo}></Flyer>} />
+          <Route key={detail.name} path={`/${detail.name}`} element={<Flyer name={detail.name} pronounce={detail.pronounce} details={detail.specifics} photo={detail.photo}></Flyer>} />
         ))}
       </Routes>
     </div>
