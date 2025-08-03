@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Flyer = () => {
+const Flyer = ({ name, pronounce, details }) => {
     return (
         <div className='flyer'>
             <div className="title">
@@ -8,11 +8,18 @@ const Flyer = () => {
             </div>
             <div className="photo"></div>
             <div className="name-details">
-                <span className="cat-name">Endymion</span>
-                <span className="pronounce">How to Pronounce: N-Dim-E-N</span>
+                <span className="cat-name">{name}</span>
+                <span className="pronounce">Pronounced:"{pronounce}" </span>
             </div>
             <div className="specific-details">
-                {/* remember to map all the details here (accent and normal) */}
+                {
+                    details.map(detail => (
+                        <div className="detail-item">
+                            <span className="detail-text">{detail.normal}</span>
+                            <span className="detail-text">{detail.accent}</span>
+                        </div>
+                    ))
+                }
             </div>
             <div className="contact">
                 <p className="contact-message">If found, please call or text</p>
