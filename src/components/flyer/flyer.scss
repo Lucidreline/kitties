@@ -2,9 +2,10 @@ $accent-color: #E63946;
 
 .flyer {
     width: 95%;
-    margin: 3vh auto;
-    background-color: rgb(244, 244, 244);
+    margin: 1.5vh auto;
+    background-color: rgb(252, 252, 252);
     border-radius: 0.25rem;
+    box-shadow: -0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.304);
 
     .title {
 
@@ -20,10 +21,14 @@ $accent-color: #E63946;
         height: 30vh;
         width: 100%;
         background-size: cover;
+        border-radius: 0.25rem;
+        box-shadow: -0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.304);
+
     }
 
     .name-details {
-        margin: 0.25rem 0;
+        margin-top: 0.15rem;
+        margin-bottom: 0.5rem;
 
         .cat-name {
             display: block;
@@ -40,13 +45,14 @@ $accent-color: #E63946;
     }
 
     .specific-details {
+        padding: 0 0.2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
         .detail-item {
             width: 48%;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.35rem;
 
 
             .detail-accent-text {
