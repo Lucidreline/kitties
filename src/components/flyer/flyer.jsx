@@ -10,7 +10,7 @@ const Flyer = ({ name, pronounce, details, photo }) => {
             <div className="photo" style={{ backgroundImage: `url("/cat-photos/${photo}")` }}></div>
 
             <div className="name-details">
-                <span className="cat-name">{name}</span>
+                <span className="cat-name">Name: {name}</span>
                 <span className="pronounce">Pronounced:"{pronounce}" </span>
             </div>
             <div className="specific-details">
