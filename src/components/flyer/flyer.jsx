@@ -11,7 +11,7 @@ const Flyer = ({ name, pronounce, details, photo }) => {
 
             <div className="name-details">
                 <span className="cat-name">Name: {name}</span>
-                <span className="pronounce">Pronounced:"{pronounce}" </span>
+                <span className="pronounce">Pronounced: {pronounce} </span>
             </div>
             <div className="specific-details">
                 {
